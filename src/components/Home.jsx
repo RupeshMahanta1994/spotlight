@@ -1,6 +1,14 @@
 import React from 'react'
-import { Box, VStack, Text, Stack, Circle, HStack, Button, Heading, List, ListItem } from '@chakra-ui/react'
-
+import { Box, VStack, Text, Stack, Circle, HStack, Button, Heading, List, ListItem, Image } from '@chakra-ui/react'
+import { NavLink } from 'react-router-dom'
+import video from "../assets/video.png"
+import web from "../assets/web.png"
+import design from "../assets/design.png"
+import logo1 from "../assets/logo1.png"
+import logo2 from "../assets/logo2.png"
+import logo3 from "../assets/logo3.png"
+import logo4 from "../assets/logo4.png"
+import logo5 from "../assets/logo5.png"
 
 const SpanColor = {
     display: "inline-block",
@@ -10,14 +18,23 @@ const SpanColor = {
 
 }
 
+const HomeIcons = {
+    w: "6rem",
+    color: "black"
+}
+
 function Home() {
+
+    const LogoSize = {
+        w: "9rem"
+    }
     return (
         <>
 
 
             <Box h="90vh"
                 w="100%"
-                bg="blackAlpha.800"
+                bg="black"
 
             >
                 <VStack justify="center"
@@ -41,8 +58,8 @@ function Home() {
                             borderRadius: "2rem",
                             padding: "1.8em",
 
-                        }}>
-                            <Text fontSize="1.1rem">Hire us</Text>
+                        }}><NavLink to="/contact"><Text fontSize="1.1rem">Hire us</Text></NavLink>
+
                         </Button>
                         <Button sx={{
                             borderRadius: "2rem",
@@ -99,11 +116,12 @@ function Home() {
                     <Stack textAlign="center"
                         align="center"
                         justify="space-between"
+                        gap="1rem"
                         flexDirection={["column", "column", "row"]}
                     >
                         <VStack >
-                            <Circle size={20} bg="#f9d542" >
-                                W
+                            <Circle size={40} bg="#f9d542" >
+                                <Image sx={HomeIcons} src={video} alt="" />
                             </Circle>
                             <Heading>
                                 Video Production
@@ -116,8 +134,8 @@ function Home() {
                         </VStack>
 
                         <VStack >
-                            <Circle size={20} bg="#f9d542" >
-                                W
+                            <Circle size={40} bg="#f9d542" >
+                                <Image sx={HomeIcons} src={web} alt="" />
                             </Circle>
                             <Heading>
                                 Web Development
@@ -128,8 +146,8 @@ function Home() {
                         </VStack>
 
                         <VStack >
-                            <Circle size={20} bg="#f9d542" >
-                                W
+                            <Circle size={40} bg="#f9d542" >
+                                <Image sx={HomeIcons} src={design} alt="" />
                             </Circle>
                             <Heading>
                                 Design & Branding
@@ -181,6 +199,15 @@ function Home() {
                         including some of the UK’s largest
                         companies and independent contractors.
                     </Text>
+                    <HStack>
+                        <Image sx={LogoSize} src={logo1} />
+                        <Image sx={LogoSize} src={logo2} />
+                        <Image sx={LogoSize} src={logo3} />
+                        <Image sx={LogoSize} src={logo4} />
+                        <Image sx={LogoSize} src={logo5} />
+
+                    </HStack>
+
 
                 </VStack>
 

@@ -1,8 +1,17 @@
-import { Box, Button, Circle, Container, HStack, Heading, Stack, Text, VStack } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Button, Circle, HStack, Heading, Image, Stack, Text, VStack } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
+import one from "../assets/one.png"
+import two from "../assets/two.png"
 
 function Who() {
+
+    const TextSixe = {
+        fontSize: {
+            base: "1rem",
+            md: "1rem",
+            lg: "1.2rem"
+        }
+    }
     return (
         <Box>
             <Box
@@ -11,7 +20,7 @@ function Who() {
             >
                 <VStack alignItems="flex-start">
                     <Heading>Our Team</Heading>
-                    <Text>
+                    <Text sx={TextSixe}>
                         We’re a small
                         team with lots
                         of experience,
@@ -19,15 +28,15 @@ function Who() {
                         a network of
                         creatives around the UK.
                     </Text>
-                    <Stack flexDirection={["column", "row", "row"]}>
-                        <HStack>
-                            <Circle size={20} bg="#f9d542" >
-                                W
+                    <Stack pt="4em" flexDirection={["column", "row", "row"]}>
+                        <HStack alignItems={["flex-start"]}>
+                            <Circle size={["20", "30", "28"]} bg="#f9d542" >
+                                <Image w="90px" src={one} />
                             </Circle>
-                            <VStack>
+                            <VStack alignItems={["flex-start"]}>
                                 <Heading>Rich Weatherson</Heading>
                                 <Text>FOUNDER & PARTNER</Text>
-                                <Text>
+                                <Text sx={TextSixe} lineHeight={{ lg: "2rem" }}>
                                     Rich has over a decade of experience
                                     working as a freelance videographer
                                     and has worked with multinational
@@ -36,14 +45,14 @@ function Who() {
                             </VStack>
                         </HStack>
 
-                        <HStack >
-                            <Circle size={20} bg="#f9d542" >
-                                W
+                        <HStack alignItems={["flex-start"]} >
+                            <Circle size={["20", "30", "28"]} bg="#f9d542" >
+                                <Image w="90px" src={one} />
                             </Circle>
-                            <VStack>
+                            <VStack alignItems={["flex-start"]}>
                                 <Heading>Rich Weatherson</Heading>
                                 <Text>FOUNDER & PARTNER</Text>
-                                <Text>
+                                <Text sx={TextSixe} lineHeight={{ lg: "2rem" }}>
                                     Rich has over a decade of experience
                                     working as a freelance videographer
                                     and has worked with multinational
@@ -64,7 +73,7 @@ function Who() {
             >
                 <Heading>Want to join the team?</Heading>
                 <Text fontWeight="bold">We work with freelance contractors around the country.</Text>
-                <Text>
+                <Text sx={TextSixe}>
                     If you’re a skilled videographer,
                     graphic designer or web developer
                     then click below to send your CV

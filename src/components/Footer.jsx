@@ -10,7 +10,7 @@ function Footer() {
         transition: "all 0.2s ease-in-out",
         "_hover": {
             color: "#fff",
-            borderBottom: "1px solid yellow"
+            borderBottom: "1px solid #f9d542"
         }
     }
     return (

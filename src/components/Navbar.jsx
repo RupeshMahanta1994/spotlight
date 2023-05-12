@@ -15,19 +15,23 @@ function Navbar() {
         margin: "1em",
         "_hover": {
             color: "#fff",
-            borderBottom: "1px solid yellow"
+            borderBottom: "1px solid #f9d542"
         }
     }
 
     return (
-        <Box bg="blackAlpha.800"
+        <Box bg="blackAlpha.900"
             color="#fff"
             p={[4]}
             position="relative"
+            px={["1em", "3em", "10em"]}
         >
             <HStack justify="space-between">
-                <Text fontSize={["1.1rem", "1.3rem", "1.5rem"]}
-                >Rupesh Mahanta</Text>
+                <Text fontSize={["1.4rem", "1.5rem", "1.8rem"]}
+                    fontWeight="bold"
+                    letterSpacing="2px"
+
+                >AE<span style={{ color: "#f9d542" }} >G</span>IS</Text>
                 <Hide above='md'>
                     {
                         show ? <CloseIcon onClick={Handleclick} /> : <HamburgerIcon onClick={Handleclick} />
@@ -44,7 +48,7 @@ function Navbar() {
                         <Box sx={HoverBox}><NavLink to='/who'>Who We Are</NavLink></Box>
                         <Box sx={HoverBox}><NavLink to='/what'>What We Do</NavLink></Box>
                         <Box sx={HoverBox}><NavLink to='/client'>Clients</NavLink></Box>
-                        <Box sx={HoverBox}><NavLink to='/blog'>Blog</NavLink></Box>
+
                         <Box sx={HoverBox}><NavLink to='/contact'>Contact</NavLink></Box>
                     </Stack>
 
@@ -58,7 +62,7 @@ function Navbar() {
                     <Box sx={HoverBox}><NavLink to='/who'>Who We Are</NavLink></Box>
                     <Box sx={HoverBox}><NavLink to='/what'>What We Do</NavLink></Box>
                     <Box sx={HoverBox}><NavLink to='/client'>Clients</NavLink></Box>
-                    <Box sx={HoverBox}><NavLink to='/blog'>Blog</NavLink></Box>
+
                     <Box sx={HoverBox}><NavLink to='/contact'>Contact</NavLink></Box>
 
                 </Box> : ''

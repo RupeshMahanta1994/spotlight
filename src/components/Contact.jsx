@@ -5,10 +5,20 @@ import { AiFillMessage, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 
 function Contact() {
+
+    const BodyDesign = {
+        w: "100%",
+        gap: "2rem",
+        flexDirection: {
+            base: "column",
+            md: "row",
+            lg: "row"
+        },
+    }
     return (
-        <Box px={4} py={20}>
-            <Stack>
-                <VStack>
+        <Box px={["1em", "3em", "10em"]} py={["3em", "3em", "6em"]}>
+            <Stack sx={BodyDesign} >
+                <VStack alignItems={["flex-start"]} w={{ base: "100%", md: "50%", lg: "50%" }}>
                     <Heading>Send us a Message</Heading>
                     <FormControl >
                         <FormLabel>
@@ -35,7 +45,7 @@ function Contact() {
 
                     </FormControl>
                 </VStack>
-                <Container>
+                <VStack alignItems={["flex-start"]} w={["100%", "50%", "50%"]}>
                     <Heading>Our Deatails</Heading>
                     <Text>
                         <Icon as={AiOutlineMail} />
@@ -52,7 +62,7 @@ function Contact() {
                         Bristol <br />
                         BS34 6ET
                     </Text>
-                </Container>
+                </VStack>
             </Stack>
 
         </Box>
