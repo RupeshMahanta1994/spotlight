@@ -68,7 +68,7 @@ function Home() {
                             color: "#93acaf",
                             border: " 1px solid #93acaf"
 
-                        }}>Learn More</Button>
+                        }}><NavLink to="/what">learn more</NavLink></Button>
 
                     </HStack>
                 </VStack>
@@ -240,7 +240,11 @@ function Home() {
                         color: "black"
 
                     }}>
-                        <Text fontSize="1.1rem">Contact us</Text>
+                        <Text fontSize="1.1rem">
+                            <NavLink to='contact'>
+                                Contact us
+                            </NavLink>
+                        </Text>
                     </Button>
 
                 </VStack>

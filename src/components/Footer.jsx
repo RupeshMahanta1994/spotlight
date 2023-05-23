@@ -75,7 +75,7 @@ function Footer() {
                             <Box sx={HoverBox}><NavLink to='/who'>Who We Are</NavLink></Box>
                             <Box sx={HoverBox}><NavLink to='/what'>What We Do</NavLink></Box>
                             <Box sx={HoverBox}><NavLink to='/client'>Clients</NavLink></Box>
-                            <Box sx={HoverBox}><NavLink to='/blog'>Blog</NavLink></Box>
+
                             <Box sx={HoverBox}><NavLink to='/contact'>Contact</NavLink></Box>
                         </Stack>
 

@@ -31,7 +31,10 @@ function Navbar() {
                     fontWeight="bold"
                     letterSpacing="2px"
 
-                >AE<span style={{ color: "#f9d542" }} >G</span>IS</Text>
+                ><NavLink to='/'>
+                        AE<span style={{ color: "#f9d542" }} >G</span>IS
+                    </NavLink>
+                </Text>
                 <Hide above='md'>
                     {
                         show ? <CloseIcon onClick={Handleclick} /> : <HamburgerIcon onClick={Handleclick} />

@@ -3,6 +3,7 @@ import React from 'react'
 import { FaUserAlt, FaAt } from "react-icons/fa";
 import { AiFillMessage, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
+import { NavLink } from 'react-router-dom';
 
 function Contact() {
 
@@ -40,7 +41,11 @@ function Contact() {
                             color: "black"
 
                         }}>
-                            <Text fontSize="1.1rem">Submit</Text>
+                            <Text fontSize="1.1rem">
+                                <NavLink to="/">
+                                    Submit
+                                </NavLink>
+                            </Text>
                         </Button>
 
                     </FormControl>

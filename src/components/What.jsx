@@ -30,10 +30,12 @@ function What() {
         p: "1em",
         fontWeight: "bold",
         transition: "all 0.2s ease-in-out",
+        cursor: "pointer",
         "_hover": {
             bg: "#f9d542",
 
         },
+
 
     }
     return (

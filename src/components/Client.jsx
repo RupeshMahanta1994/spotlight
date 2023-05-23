@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { Box, Image, Heading, Text, VStack, Button, Stack, Spacer } from '@chakra-ui/react'
 import logo1 from "../assets/logo1.png"
 import logo2 from "../assets/logo2.png"
@@ -115,7 +116,8 @@ function Client() {
                         color: "black"
 
                     }}>
-                        <Text fontSize="1.1rem">Contact us</Text>
+                        <Text fontSize="1.1rem">
+                            <NavLink to="/contact">Contact Us</NavLink></Text>
                     </Button>
 
                 </VStack>
